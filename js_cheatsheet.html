@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JavaScript Cheatsheet</title>
+  </head>
+  <body>
+    <div id="text">SOME TEXT</div>
+    <script>
+    /*JavaScript Cheatsheet
+      1. Variables
+        Are storage units for values. It can storage numbers, strings, you don't need to specify the type of content.
+
+        Syntax:*/
+        var x = 0;
+
+    /*2. Debugging (alerts, console, writing to HTML element)
+        There are many ways to evaluate how your code is performing. Some of those ways are listed bellow:
+
+        Alerts
+          Opens a pop-up box on the browser, with an ok button.
+          Syntax: alert("string" or value)*/
+          alert("Hello");      
+
+      /*Console
+          Prints stuff into the console of the browser. 
+          Syntax: console.log("string" or value)*/
+          console.log("Hello world!");
+
+      /*Writting to HTML element
+          This allows you to change an element in the screen (html body) without refreshing.
+          Syntax: document.getElementById("id of element").innerHTML = some string or value;*/
+          function changetext(id){
+            document.getElementById(id).innerHTML = "NEWtext";
+          }
+
+          changetext("text");
+    /*3. Different data types
+        There are many data types but commonly you will be using
+
+        Number: Float
+        String
+        Boolean
+        Arrays
+        Objects
+
+     4. Arrays
+       Arrays store many variables. They are useful for organizing data.
+       Arrays can store other arrays inside them.
+       It is possible to store more than one data type at the same array. Example:*/
+       var weirdarray = ["cats", "dogs", 55];
+       console.log(weirdarray);
+      
+   /*5. Objects
+       Objects are another way of organizing data and they can gather various "things", that are separated in categories or keys. 
+       Access data inside object using dot notation: gabi.birthday*/
+    
+       gabi = {Name: "gabriela", birthday: "jan6", age: 24};
+
+       console.log(gabi.Name);
+       console.log(gabi.birthday);
+       console.log(gabi.age);
+       /*name, birthday, age : keys*/
+
+    /*6. Testing
+       Tests return true or false.
+       Equal: "gabi" === "gabriela" -> false
+       Not equal: 5 !=== "5" -> true
+       Greater, smaller than: 5 > 8 -> false*/
+      console.log("gabi" === "gabriela")
+      console.log(5 !== "5")
+      console.log(5 > 8)
+
+    /*7. Logic
+       It defines the flow of the program. Some tools to operate the logic of a program are if, else and else if statements. Example:*/
+       function pickadoor(door){
+        if(door === 1){
+          console.log("You got a bag of bananas");
+        }else if (door === 2){
+          console.log("You got a mansion");
+        }else {
+          console.log("You got nothing")
+        }
+       }
+
+       var door = 2;
+       pickadoor(door);
+    
+    </script>
+  </body>
+</html> 
+
