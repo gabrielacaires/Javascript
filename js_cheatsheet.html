@@ -84,6 +84,29 @@
 
        var door = 2;
        pickadoor(door);
+
+
+       /*Added 2 more functions that take inputs and print something to the console*/
+
+       function userinfo(user){
+        console.log("Username: " + user.Name);
+        console.log("Birthday: " + user.birthday);
+        console.log("Age: " + user.age);
+       }
+
+       userinfo(gabi);
+
+
+       function rankinterests(interest) {
+        console.log("User's interests:")
+        for (var i = 0; i < interest.length; i++) {
+          console.log((i+1) + " - " + interest[i]);
+        };
+       }
+
+       var interest = ["food","dogs","cats"];
+
+       rankinterests(interest);
     
     </script>
   </body>
